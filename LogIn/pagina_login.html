@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <title> Página de Login </title>
+        <link rel="stylesheet" href="pagina_login.css">
+    </head>
+
+    <body>
+        <div class="caixa-do-login">
+            <form action="">
+                <h1 class="texto">Faça seu log in aqui</h1>
+                <p class="texto">Insira seus dados</p>
+
+                <div class="input-caixa">
+                    <input type="text" name="" id="email"  class="input">
+                    <label for="email">Insira seu email</label>
+                </div>
+
+                
+                <div  class="input-caixa">
+                    <input type="password" name="" id="senha"  class="input">
+                    <label for="email">Insira sua senha</label>
+                    
+                    <i class="bi bi-eye-fill" id="olho" onclick="mostrarSenha()"></i>
+                </div>
+
+                <div class="input-caixa">
+                    <input type="submit" value="Log In" class="botao">
+                </div>
+            </form>            
+        </div>
+
+        <script src="pagina_login.js" defer></script>
+    </body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="calculadora.css">
+    </head>
+
+    <body>
+        <div class="caixa-calculadora">
+            <div class="tela-calculadora"><p id="paragrafo"></p></div>
+
+            <div class="botoes-numeros">
+                <div class="coluna-um">
+                    <button id="botao-1" onclick="exibir('1')">1</button>
+                    <button id="botao-2" onclick="exibir('2')">2</button>
+                    <button id="botao-3" onclick="exibir('3')">3</button>
+                </div>
+                    <div class="coluna-dois">
+                    <button id="botao-4" onclick="exibir('4')">4</button>
+                    <button id="botao-5" onclick="exibir('5')">5</button>
+                    <button id="botao-6" onclick="exibir('6')">6</button>
+                </div>
+                <div class="coluna-tres">
+                    <button id="botao-7" onclick="exibir('7')">7</button>
+                    <button id="botao-8" onclick="exibir('8')">8</button>
+                    <button id="botao-9" onclick="exibir('9')">9</button>
+                </div>
+                <div class="coluna-quatro">
+                    <button id="botao-0" onclick="exibir(0)">0</button>
+                    <button id="limpar" onclick="limpar()">C</button>
+                    <button id="ponto" onclick="exibir('.')"><i class="bi bi-dot"></i></button>
+                </div>
+            </div>
+
+            <div class="botoes-simbolos">
+                <button id="mais" onclick="exibir('+')"><i class="bi bi-plus"></i></button>
+                <button id="menos" onclick="exibir('-')"><i class="bi bi-dash"></i></button>
+                <button id="multiplicar" onclick="exibir('*')"><i class="bi bi-x" id="multiplicador"></i></button>
+                <button id="dividir" onclick="exibir('/')"><i class="bi bi-slash"></i></button>
+            </div>
+            <button id="igual" onclick="calcular()">=</button>
+        </div>
+
+        <script src="calculadora.js" defer></script>
+    </body>
